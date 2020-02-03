@@ -1,0 +1,41 @@
+.mastherd {
+  background-color: aquamarine;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: pink;
+}
+.list {
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.nav-items {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+.nav-link {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+
+  color: rgb(15, 1, 1);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: (rgb(26, 188, 156));
+}
+
+.blog-articl {
+  font-family: font75607;
+}
