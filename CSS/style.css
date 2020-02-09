@@ -1,41 +1,91 @@
+html {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+}
+
+.body {
+  background-color: white;
+  margin: 0;
+}
+
 .mastherd {
   background-color: aquamarine;
 }
 
 .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 0;
   width: 1110px;
   margin-left: auto;
   margin-right: auto;
-  background-color: pink;
+}
+.page-nav {
+  /* background-color: lightgrey; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-logo {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: rgb(85, 82, 82);
 }
 .list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   cursor: pointer;
   text-transform: uppercase;
   text-decoration: none;
 }
-.nav-items {
-  display: flex;
-  list-style: none;
-  justify-content: flex-end;
-}
-.nav-link {
-  padding-left: 15px;
-  padding-right: 15px;
 
+.site-nav {
+  display: flex;
+}
+.site-link {
+  padding-left: 17px;
+  padding-right: 17px;
   font-family: "Times New Roman", Times, serif;
   font-size: 14px;
-
+  text-decoration: none;
   color: rgb(15, 1, 1);
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: (rgb(26, 188, 156));
+.site-link:hover,
+.site-link:focus {
+  color: rgb(26, 188, 156);
 }
 
+.section {
+  margin-top: 0;
+}
+.section-title {
+  text-transform: uppercase;
+  font-size: 48px;
+  margin-bottom: 132;
+  text-align: center;
+}
+.section-products {
+  background-color: lightgrey;
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-item {
+  position: relative;
+}
+.product-image {
+  position: absolute;
+  width: 255px;
+  height: 282px;
+}
+.products-link {
+  position: absolute;
+  bottom: 0;
+}
+.products-cost {
+  position: absolute;
+}
 .blog-articl {
   font-family: font75607;
 }
