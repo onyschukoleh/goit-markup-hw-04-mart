@@ -1,4 +1,4 @@
-html {
+.html {
   box-sizing: border-box;
 }
 * {
@@ -10,18 +10,17 @@ html {
   margin: 0;
 }
 
-.mastherd {
+/* .mastherd {
   background-color: aquamarine;
-}
+} */
 
 .container {
-  padding: 0;
   width: 1110px;
   margin-left: auto;
   margin-right: auto;
 }
 .page-nav {
-  /* background-color: lightgrey; */
+  margin-top: 38px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,6 +29,11 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 30px;
   color: rgb(85, 82, 82);
+}
+
+.site-logo::first-letter {
+  color: rgb(26, 188, 156);
+  font-size: 30px;
 }
 .list {
   margin: 0;
@@ -62,30 +66,142 @@ html {
 }
 .section-title {
   text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  color: rgb(81, 81, 81);
   font-size: 48px;
-  margin-bottom: 132;
+  margin-bottom: 132px;
+  margin-top: 132px;
   text-align: center;
 }
-.section-products {
-  background-color: lightgrey;
+.product-list {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 105px;
 }
+
 .product-item {
+  /* all: unset; */
   position: relative;
+  margin-right: 24px;
+  margin-bottom: 30px;
 }
-.product-image {
+.product-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.product-link {
+  position: relative;
+  display: inline-block;
+  width: 255px;
+  height: 322px;
+  margin: 0;
+  padding: 0;
+}
+.product-link::before {
+  display: none;
   position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 255px;
+  height: 40px;
+  content: "";
+  background-color: rgb(26, 188, 156, 0.5);
+}
+.product-link:hover::before {
+  display: block;
+}
+
+.product-img {
   width: 255px;
   height: 282px;
 }
-.products-link {
-  position: absolute;
-  bottom: 0;
+
+.product-action {
+  display: flex;
 }
-.products-cost {
-  position: absolute;
+.product-name {
+  display: inline-flex;
+  height: 40px;
+  width: 200px;
+  align-items: center;
+  background-color: rgb(50, 50, 50);
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  padding-left: 14px;
 }
-.blog-articl {
-  font-family: font75607;
+.product-cost {
+  display: inline-flex;
+  height: 40px;
+  width: 55px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(140, 140, 140);
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.news-list {
+  display: flex;
+  padding-top: 120px;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 80px;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.news-item {
+  display: inline-block;
+  width: 350px;
+  height: auto;
+  margin-right: 30px;
+  padding: 0;
+}
+
+.news-name {
+  color: rgb(82, 82, 82);
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  padding-top: 14px;
+  margin: 0;
+  margin-bottom: 43px;
+}
+.news-descr {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: rgb(82, 82, 82);
+  list-style: none;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.news-link {
+  display: flex;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  background-color: #4ec6ab;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  cursor: pointer;
+  width: 159px;
+  height: 51px;
+  text-align: center;
+  text-decoration: none;
 }
