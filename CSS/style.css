@@ -69,8 +69,8 @@
   font-family: "Roboto", sans-serif;
   color: rgb(81, 81, 81);
   font-size: 48px;
-  margin-bottom: 132px;
-  margin-top: 132px;
+  margin-top: 107px;
+  margin-bottom: 130px;
   text-align: center;
 }
 .product-list {
@@ -78,13 +78,12 @@
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  padding-bottom: 105px;
 }
 
 .product-item {
   /* all: unset; */
   position: relative;
-  margin-right: 24px;
+  margin-right: 30px;
   margin-bottom: 30px;
 }
 .product-item:nth-child(4n) {
