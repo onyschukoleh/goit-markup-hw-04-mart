@@ -28,7 +28,9 @@ img {
   margin-left: auto;
 }
 
-/* hearer */
+.mailhead {
+  margin-bottom: 105px;
+}
 .sait-nav {
   margin: 0;
   padding: 0;
@@ -48,7 +50,6 @@ img {
   padding-right: 15px;
   font-size: 14px;
   color: #555252;
-  height: 11px;
   font-weight: bolder;
 }
 .nav-link:hover,
@@ -72,7 +73,7 @@ img {
 
 /* Products */
 .titel {
-  margin-top: 105px;
+  margin: 0;
   font-size: 48px;
   color: rgb(81, 81, 81);
   line-height: 32px;
@@ -86,6 +87,7 @@ img {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
+  margin-bottom: 105px;
 }
 .products-item {
   width: 255px;
@@ -101,6 +103,9 @@ img {
   margin-bottom: 0;
 }
 
+.products-link {
+  display: block;
+}
 .product-info {
   display: flex;
 }
@@ -145,7 +150,9 @@ img {
 .products-item:focus .product-price {
   background-color: #7fd9c7;
 }
-
+.news {
+  padding-bottom: 47px;
+}
 .news-gallery {
   list-style: none;
   display: flex;
@@ -161,18 +168,23 @@ img {
 }
 
 .news-name {
+  margin: 0;
   font-size: 18px;
   color: rgb(85, 82, 82);
   line-height: 26px;
   font-weight: bolder;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 .news-desc {
+  margin: 0;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   color: rgb(85, 82, 82);
   line-height: 26px;
   font-weight: bolder;
+  padding-bottom: 20px;
 }
 
 .news-item:nth-child(3n) {
@@ -190,6 +202,9 @@ img {
   font-family: "Open Sans", sans-serif;
   color: rgb(255, 255, 255);
   line-height: 26px;
-  margin-bottom: 47px;
-  margin-top: 20px;
+}
+
+.news-link:hover {
+  color: #0f0101;
+  background-color: #fff;
 }
