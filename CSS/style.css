@@ -204,7 +204,8 @@ img {
   line-height: 26px;
 }
 
-.news-link:hover {
+.news-link:hover,
+.news-link:focus {
   color: #0f0101;
   background-color: #fff;
 }
